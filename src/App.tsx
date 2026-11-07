@@ -71,7 +71,7 @@ export default function App() {
 
   const handleAdminLogin = (e) => {
     e.preventDefault();
-    if (adminPassInput === 'chad2026') {
+    if (adminPassInput === 'Fu16042!') {
       setIsAdmin(true);
       setShowAdminModal(false);
       setAdminPassInput('');
@@ -215,7 +215,7 @@ export default function App() {
         <div style={{ position: 'fixed', inset: 0, background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(4px)', display: 'flex', justifyContent: 'center', alignItems: 'center', zIndex: 100 }}>
           <form onSubmit={handleAdminLogin} style={{ background: '#171717', padding: '24px', borderRadius: '12px', display: 'flex', flexDirection: 'column', gap: '12px', width: '300px', border: '1px solid #333' }}>
             <h3 style={{ margin: 0, color: '#E30A17', fontSize: '18px' }}>Admin Girişi</h3>
-            <input type="password" placeholder="Şifre (chad2026)" value={adminPassInput} onChange={(e) => setAdminPassInput(e.target.value)} style={{ padding: '10px', background: '#0a0a0a', border: '1px solid #333', color: '#fff', borderRadius: '8px', outline: 'none' }} />
+            <input type="password" placeholder="Şifre " value={adminPassInput} onChange={(e) => setAdminPassInput(e.target.value)} style={{ padding: '10px', background: '#0a0a0a', border: '1px solid #333', color: '#fff', borderRadius: '8px', outline: 'none' }} />
             <div style={{ display: 'flex', gap: '10px', marginTop: '5px' }}>
               <button type="button" onClick={() => setShowAdminModal(false)} style={{ flex: 1, padding: '10px', background: '#262626', color: '#aaa', border: 'none', borderRadius: '8px', cursor: 'pointer', fontWeight: 'bold' }}>İptal</button>
               <button type="submit" style={{ flex: 1, padding: '10px', background: '#E30A17', color: '#fff', border: 'none', borderRadius: '8px', fontWeight: 'bold', cursor: 'pointer' }}>Giriş</button>
