@@ -203,10 +203,12 @@ export default function App() {
           </div>
         )}
 
-        {/* Footer */}
-        <footer style={{ marginTop: '60px', borderTop: '1px solid #262626', paddingTop: '30px', textAlign: 'center', paddingBottom: '40px' }}>
-          <h4 style={{ color: '#E30A17', margin: '0 0 5px 0', fontSize: '14px', letterSpacing: '1px' }}>SİTE KURUCUSU / FOUNDER</h4>
-          <p style={{ color: '#666', margin: 0, fontSize: '12px' }}>Türkiye Resmi Chad Ranking Platformu © 2026</p>
+{/* Footer */}
+<footer style={{ textAlign: 'center', padding: '30px 20px', color: '#888', fontSize: '14px', borderTop: '1px solid #222', marginTop: '50px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px' }}>
+          <div style={{ color: '#E30A17', fontWeight: 'bold', fontSize: '13px', letterSpacing: '1px' }}>SİTE KURUCUSU / FOUNDER</div>
+          <img src="https://i.imgur.com/EfzhpTg.jpeg" alt="Fırat Uğuz" style={{ width: '70px', height: '70px', borderRadius: '50%', objectFit: 'cover', border: '2px solid #E30A17', boxShadow: '0 0 12px rgba(227, 10, 23, 0.4)' }} />
+          <div style={{ color: '#fff', fontWeight: 'bold', fontSize: '16px' }}>Fırat Uğuz</div>
+          <div>Türkiye Resmi Chad Ranking Platformu © 2026</div>
         </footer>
       </div>
 
@@ -241,34 +243,4 @@ export default function App() {
       )}
     </div>
   );
-}<footer style={{ 
-  textAlign: 'center', 
-  padding: '30px 20px', 
-  color: '#888', 
-  fontSize: '14px', 
-  borderTop: '1px solid #222', 
-  marginTop: '50px',
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  gap: '12px'
-}}>
-  <div style={{ position: 'relative' }}>
-    <img 
-      src="https://i.imgur.com/EfzhpTg.jpeg" 
-      alt="Fırat Uğuz" 
-      style={{ 
-        width: '70px', 
-        height: '70px', 
-        borderRadius: '50%', 
-        objectFit: 'cover',
-        border: '2px solid #E30A17',
-        boxShadow: '0 0 12px rgba(227, 10, 23, 0.4)'
-      }} 
-    />
-  </div>
-  <div>
-    <div style={{ color: '#fff', fontWeight: 'bold', fontSize: '16px' }}>Fırat Uğuz</div>
-    <div style={{ color: '#E30A17', fontSize: '12px', fontWeight: '600', letterSpacing: '1px', marginTop: '2px' }}>FOUNDER & DEVELOPER</div>
-  </div>
-</footer>
+}
