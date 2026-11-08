@@ -91,6 +91,10 @@ export default function App() {
       image: newImg
     };
     setCandidates([newEntry, ...candidates]);
+    supabase
+      .from('chads')
+      .insert([newEntry])
+      .then(() => {});
     setNewName('');
     setNewDesc('');
     setNewImg('');
