@@ -1,3 +1,4 @@
+import { supabase } from './supabaseClient';
 import React, { useState, useEffect } from 'react';
 
 // Başlangıç Adayları Listesi (Puan kaldırıldı, sadece oy sayısı var)
