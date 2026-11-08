@@ -3,9 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 // Başlangıç Adayları Listesi (Puan kaldırıldı, sadece oy sayısı var)
 const initialCandidates = [
-  { id: '1', name: 'GigaChad (Ernest Khalimov)', desc: 'İkonik jawline ve kusursuz genetik.', votes: 420, image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60' },
-  { id: '2', name: 'Jordan Barrett', desc: 'Hunter eyes ve yüksek elmacık kemikleri.', votes: 310, image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&auto=format&fit=crop&q=60' },
-  { id: '3', name: 'Chico Lachowski', desc: 'Klasik lise crush aesthetic kralı.', votes: 290, image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500&auto=format&fit=crop&q=60' }
+  
 ];
 
 export default function App() {
@@ -28,15 +26,6 @@ export default function App() {
   const [activeTab, setActiveTab] = useState('leaderboard');
   const [searchQuery, setSearchQuery] = useState('');
   const [hasVotedThisMonth, setHasVotedThisMonth] = useState(false);
-  const [isAdmin, setIsAdmin] = useState(false);
-  const [showAdminModal, setShowAdminModal] = useState(false);
-  const [adminPassInput, setAdminPassInput] = useState('');
-  const [showAddCandidateModal, setShowAddCandidateModal] = useState(false);
-  
-  const [newName, setNewName] = useState('');
-  const [newDesc, setNewDesc] = useState('');
-  const [newImg, setNewImg] = useState('');
-
   // Ay değişimi kontrolü (Canlı takip)
   useEffect(() => {
     const savedMonth = localStorage.getItem('ranking_month');
